@@ -10,4 +10,9 @@ while True:  # Loop "forever"
         break  # Exit loop
 
     quantity = int(raw_quantity)  # could validate via try/except
-    print(f"sending {quantity} ticket(s)")
+    if quantity > 16:
+        print("Sorry, max 16 at one time")
+    elif quantity > 0 and quantity % 2 != 0:
+        print("Purchase must be a multiple of 2")
+    else:
+        print(f"sending {quantity} ticket(s)")

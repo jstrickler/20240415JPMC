@@ -1,0 +1,1 @@
+print("Hunt the wumpus!")

@@ -28,3 +28,9 @@ print('-' * 60)
 with open(FILE_NAME) as mary_in:
     lines_without_nl = mary_in.read().splitlines()  # splitlines() splits string on ' ' into lines
     print(lines_without_nl)
+
+with open(FILE_NAME, "rb") as mary_in:
+    mary_in.seek(-40, 2)  # 0=beg 1=curr 2=end
+    last_40 = mary_in.read()
+    print(f"{last_40 = }")
+
