@@ -6,6 +6,7 @@ try:  # Execute code that might have a problem
     print("Bottom of try")
 
 except TypeError as err:    # Catch the expected error; assign error object to err
+    # should log error 
     print("Naughty programmer! ", err)
 
 print("After try-except")  # Get here whether or not exception occurred

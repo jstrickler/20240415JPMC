@@ -18,5 +18,6 @@ try:
     print("Bottom of try")
 except TypeError as err:
     print("Caught exception:", err)
+    exit()
 finally:
     print("Still don't care whether we had an exception")

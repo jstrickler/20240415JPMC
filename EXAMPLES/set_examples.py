@@ -1,3 +1,14 @@
+# x = {}   dict
+# y = {'a': 5, 'm': 10} dict
+# z = set()  set
+# w = {'a', 'b', 'c'}  set
+# t = ()   tuple
+# m = 5,  tuple with one element
+# n = 5, 6, 7   tuple
+# j = []   list
+# k = [1, 2, 3]  list
+# r = [x.upper() for x in my_stuff]  list comprehension
+# s = (x.upper() for x in my_stuff)  generator expression
 
 set1 = {'red', 'blue', 'green', 'purple', 'green'}  # create literal set
 set2 = {'green', 'blue', 'yellow', 'orange'}
@@ -17,4 +28,4 @@ with open('../DATA/breakfast.txt') as breakfast_in:
     food = breakfast_in.read().splitlines()
 
 unique_food = set(food)  # Create set from iterable (e.g., list)
-print(unique_food)
+print(sorted(unique_food, key=str.lower))
