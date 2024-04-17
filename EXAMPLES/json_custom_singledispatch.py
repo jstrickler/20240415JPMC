@@ -41,7 +41,6 @@ data = {
 def encode(obj):
     return obj
 
-
 @encode.register(date)
 def encode_date(date_obj):
     return date_obj.isoformat()

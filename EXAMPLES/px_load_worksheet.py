@@ -10,6 +10,9 @@ def main():
     ws = wb['US Presidents']
     print(ws, '\n')
 
+    # if you can't have __repl__() return exact way to create obj
+    #  <Class "Description">
+
     # 2
     for ws in wb:
         print(ws.title, ws.dimensions)

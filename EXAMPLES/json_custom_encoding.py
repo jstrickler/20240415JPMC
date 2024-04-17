@@ -24,6 +24,7 @@ def encode(obj):  # custom JSON encoder function
     if isinstance(obj, date):  # check for date object
         return obj.ctime()  # convert date to string
     elif isinstance(obj, Parrot):  # check for Parrot object
+        # obj.__dict__
         return {'name': obj.name, 'color': obj.color}  # convert Parrot to dictionary
     return obj  # if not processed, return object for JSON to parse with default parser
 

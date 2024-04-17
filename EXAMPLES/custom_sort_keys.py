@@ -34,3 +34,8 @@ fs3 = sorted(fruit, key=str.lower)
 print(f"{fs3 = }\n")
 
 
+fs4 = sorted(fruit, key=lambda e: (len(e), e.lower()))
+print(f"{fs4 = }\n")
+
+#  lambda params ...: return-value
+
