@@ -28,3 +28,6 @@ print_header("Multiply column gamma by 1.5")
 df['gamma'] *= 1.5  # multiply values in column 'gamma' by 1.
 print(df)
 print()
+
+x = df.beta / 10
+print(f"{x = }")

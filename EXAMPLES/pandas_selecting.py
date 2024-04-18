@@ -17,6 +17,10 @@ df = pd.DataFrame(values, index=index, columns=columns)  # create dataframe with
 print_header('DataFrame df')
 print(df, '\n')
 
+#  df[string]   column(s)
+#  df[iterable]  column(s)
+#  df[slice]   row(s)
+
 print_header("df['alpha']")
 print(df['alpha'], '\n')  # select column 'alpha' -- single value selects column by name
 

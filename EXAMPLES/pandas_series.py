@@ -13,6 +13,10 @@ s2 = pd.Series(data)  # create series with auto-generated index (0, 1, 2, 3, ...
 print("s1:", s1, "\n")
 print("s2:", s2, "\n")
 
+print("selecting one element")
+print(s1['e'], "\n")  # select one element
+print(s2[8], '\n')  # select one element
+
 print("selecting elements")
 print(s1[['h', 'b']], "\n")  # select items from series
 
@@ -27,7 +31,7 @@ print(s1.sum(), s1.mean(), s1.min(), s1.max(), "\n")  # get stats on series
 print("cumsum(), cumprod():")
 print(s1.cumsum(), s1.cumprod(), "\n")  # get stats on series
 
-print('a' in s1)  # test for existence of label
+print('a' in s1)  # test for existence of label/index
 print('m' in s1)  # test for existence of label
 print()
 

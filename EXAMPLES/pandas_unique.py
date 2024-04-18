@@ -13,3 +13,5 @@ print(party_counts)
 plt.figure(figsize=(20.0,8.0))
 party_counts.plot(kind='barh')
 plt.show()
+plt.savefig("potus.png")
+

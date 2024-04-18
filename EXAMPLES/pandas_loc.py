@@ -1,7 +1,6 @@
 import pandas as pd
 from printheader import print_header
 
-
 cols = ['alpha', 'beta', 'gamma', 'delta', 'epsilon']
 indices = ['a', 'b', 'c', 'd', 'e', 'f']
 
@@ -18,6 +17,8 @@ df = pd.DataFrame(values, index=indices, columns=cols)
 print_header('DataFrame df')
 print(df, '\n')
 
+# df.loc[row,col]
+# df.loc[row]
 print_header("df.loc['b', 'delta']")  # one value
 print(df.loc['b', 'delta'], "\n")
 
@@ -25,7 +26,7 @@ print(df.loc['b', 'delta'], "\n")
 print_header("df.loc['b']")  # one row
 print(df.loc['b'], '\n')
 
-print_header("df.loc[:,'delta']")  # one column
+print_header("df.loc[:, 'delta']")  # one column
 print(df.loc[:,'delta'], '\n')
 
 

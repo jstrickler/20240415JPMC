@@ -1,12 +1,6 @@
 import numpy as np
 
-a = np.array(
-    [
-        [5, 10, 15],
-        [2, 4, 6],
-        [3, 6, 9, ],
-    ]
-)  # create 2D array
+a = np.array([[5, 10, 15],[2, 4, 6],[3, 6, 9, ],])  # create 2D array
 
 b = np.array(
     [

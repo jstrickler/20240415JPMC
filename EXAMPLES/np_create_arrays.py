@@ -2,7 +2,7 @@ import sys
 import numpy as np
 data = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [20, 30, 40]]
 
-a = np.array(data)  # create array from nested sequences
+a = np.array(data, dtype=np.int8)  # create array from nested sequences
 print(a, '\n')
 
 print("a.ndim (# dimensions):", a.ndim)  # get number of dimensions

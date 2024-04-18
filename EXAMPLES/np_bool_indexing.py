@@ -15,9 +15,12 @@ print('i (a > 50) =>', i, '\n')
 
 print('a[i] =>', a[i], '\n')  # print elements of a that are > 50 using mask
 
+x = np.array([True, False, False, True, False])
+print(a[x])
+
 print('a[a > 50] =>', a[a > 50], '\n')  # same, but without creating a separate mask
 
-print('a[i].min(), a[i].max() =>', a[i].min(), a[i].max(), '\n')  # min and max values of result set with values less than 50
+print('a[i].min(), a[a > 50].max() =>', a[i].min(), a[i].max(), '\n')  # min and max values of result set with values less than 50
 
 a[i] = 0  # set elements with value > 50 to 0
 print('a =>', a, '\n')

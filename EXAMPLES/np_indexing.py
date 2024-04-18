@@ -14,6 +14,8 @@ print()
 
 print('a[0] =>', a[0])  # first row
 print('a[0][0] =>', a[0][0])  # first element of first row
+# a[row-spec, col-spec]
+# a[:, col-spec]
 print('a[0,0] =>', a[0,0])  # same, but numpy style
 print('a[0,:3] =>', a[0,:3])  # first 3 elements of first row
 print()

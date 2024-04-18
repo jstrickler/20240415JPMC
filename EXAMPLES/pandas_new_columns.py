@@ -13,6 +13,9 @@ values = [
 ]
 
 df = pd.DataFrame(values, index=index, columns=cols)
+print(df)
+print('-' * 60)
+
 
 def times_ten(x):
     return x * 10

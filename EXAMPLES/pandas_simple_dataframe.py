@@ -28,3 +28,6 @@ print(df, '\n')
 
 print_header("df['gamma']")
 print(df['gamma'])  # select column 'gamma'
+
+x = df['gamma']
+print(f"{type(x) = }")

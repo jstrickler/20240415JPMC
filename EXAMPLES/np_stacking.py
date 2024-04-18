@@ -25,6 +25,6 @@ print()
 
 # add column with product of last two columns
 print(
-    'np.hstack((a, np.prod(a[:,-2:], axis=1).reshape(2,1))) =>\n',
-    np.hstack((a, np.prod(a[:,-2:], axis=1).reshape(2,1)))
+    'np.hstack((a, np.prod(a, axis=1).reshape(2,1))) =>\n',
+    np.hstack((a, np.prod(a, axis=1).reshape(2,1)))
 )

@@ -5,6 +5,11 @@ print(r1)
 print("size is", r1.size)  # size is 50
 print()
 
+r1.shape = (10, 5)
+r1.shape = (5, 2, 5)
+print(f"{r1 = }")
+
+
 r2 = np.arange(5, 101, 5)  # create range of ints from 5 to 100 counting by 5
 print(r2)
 print("size is", r2.size)
